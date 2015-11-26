@@ -8550,7 +8550,10 @@ p {
   line-height: 1.5; }
 
 #cycleThis li {
-  display: none; }
+  display: none;
+  font-size: 46px;
+  font-weight: bold;
+  list-style: none; }
 
 .bg-primary {
   background-color: #030304;
@@ -8938,5 +8941,11 @@ video {
   background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
   background-size: cover;
   transition: 1s opacity; }
+
+#cycleThis svg path {
+  transition: fill 1s ease; }
+
+.showBubo path {
+  fill: #000; }
 
 /* Bootstrap overrides */

@@ -6,6 +6,7 @@
                     <li>Text heading 1</li>
                     <li>Dit is text heading 2</li>
                     <li>De 3e text heading</li>
+                    <li><img class="inject-me" src="<?php echo get_template_directory_uri(); ?>/img/logo_bubo.svg"></li>
                 </ul>
             </div>
         </div>

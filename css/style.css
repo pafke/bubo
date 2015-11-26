@@ -8550,7 +8550,9 @@ p {
   line-height: 1.5; }
 
 #cycleThis li {
-  display: none; }
+  display: none;
+  font-size: 26px;
+  list-style: none; }
 
 .bg-primary {
   background-color: #030304;
