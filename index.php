@@ -37,7 +37,7 @@
         </svg>
 
     </header>
-	<video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" class="grayscale">
+	<video autoplay  poster="<?php echo get_template_directory_uri(); ?>/img/bg_vid2.jpg" id="bgvid" class="grayscale">
 	  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 	<source src="<?php echo get_template_directory_uri(); ?>/assets/owl.webm" type="video/webm">
 	<source src="<?php echo get_template_directory_uri(); ?>/assets/owl.mp4" type="video/mp4">

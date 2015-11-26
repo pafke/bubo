@@ -23,11 +23,17 @@ $( document ).ready(function() {
             }
         });
     }
-
-    $('#bgvid').bind('ended', function(){
-        $(this).fadeOut('slow');
-        var oldClass = $('#cycleThis svg').attr('class');
-        $('#cycleThis svg').attr('class',oldClass+' showBubo');
+    var checkvar = true;
+    $('#bgvid').on('timeupdate', function(event) {
+        var current = Math.round(event.target.currentTime * 1000);
+        var total = Math.round(event.target.duration * 1000);        
+        if ( (( total - current ) < 4000) && checkvar == true) {
+            checkvar = false;
+            console.log('fade out');
+            $(this).fadeOut(4000);
+            var oldClass = $('#cycleThis svg').attr('class');
+            $('#cycleThis svg').attr('class',oldClass+' showBubo');
+        } 
     });
     
     
