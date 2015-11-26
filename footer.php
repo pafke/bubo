@@ -1,21 +1,27 @@
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-    
     <script>
-        $('#cycleThis li').each(function(){
-            console.log('test');
+        var showtext = 2700;
+        var fade = 1500;
+
+        $('#cycleThis li:first-child').each(function(){
+            checkFade($(this));
         });
+
+        function checkFade(item){
+            item.fadeIn(fade, function() {
+                if(!item.is(':last-child')){
+                    item.delay(showtext).fadeOut(fade, function() {
+                        $(this).next().each(function(){
+                            checkFade($(this));
+                        });
+                    });
+                }
+            });
+        }     
     </script>
     <?php wp_footer(); ?>
 </body>

@@ -2,7 +2,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <ul id="#cycleThis">
+                <ul id="cycleThis">
                     <li>Text heading 1</li>
                     <li>Dit is text heading 2</li>
                     <li>De 3e text heading</li>

@@ -8549,6 +8549,9 @@ p {
   font-size: 16px;
   line-height: 1.5; }
 
+#cycleThis li {
+  display: none; }
+
 .bg-primary {
   background-color: #030304;
   fill: #030304; }
@@ -8937,5 +8940,3 @@ video {
   transition: 1s opacity; }
 
 /* Bootstrap overrides */
-
-/*# sourceMappingURL=style.css.map */
