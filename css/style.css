@@ -1,9 +1,10 @@
-/*!
- * Bootstrap v3.3.2 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*
+Theme Name: Bubo theme
+Theme URI: https://www.bubobubo.eu
+Author: Timo Veld
+Author URI: https://timoveld.nl
+Description: Bubo bubo wordpress theme
+*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -8517,11 +8518,6 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 html,
 body {
   width: 100%;
@@ -8746,7 +8742,11 @@ header .header-content .header-content-inner p {
   display: block;
   position: relative;
   margin: 0 auto;
-  max-width: 650px; }
+  width: 100%;
+  height: 220px;
+  background: radial-gradient(ellipse at center, white 0%, white 26%, gainsboro 76%, #c8c8c8 100%); }
+  .portfolio-box img {
+    max-height: 50px; }
 
 .portfolio-box .portfolio-box-caption {
   display: block;
@@ -8941,5 +8941,3 @@ video {
   transition: 1s opacity; }
 
 /* Bootstrap overrides */
-
-/*# sourceMappingURL=style.css.map */
