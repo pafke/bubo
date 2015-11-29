@@ -67,7 +67,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding-top: 100px;
 }
 
 aside {
@@ -527,16 +527,28 @@ video {
 
 /* Portfolio */
 .portfolio-item {
-    background: rgba(255,255,255,1);
-    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(200,200,200,1) 76%, rgba(180,180,180,1) 100%);
+    transition: all 500ms ease-in-out;
+    background: rgba(200,200,200,1);
+    background: radial-gradient(ellipse at center, rgba(200,200,200,1) 0%, rgba(200,200,200,1) 26%, rgba(160,160,160,1) 76%, rgba(130,130,130,1) 100%);
     height: 200px;
     text-align: center;
+    border-right: solid 1px #030304;
+    border-top: solid 1px #030304;
     img {
+        transition: all 500ms ease-in-out;
         position: relative;
         top: 50%;        
         transform: translateY(-50%);
         max-width: 140px;
         max-height: 90px;
+        opacity: 0.6;
+    }
+}
+.portfolio-link:hover .portfolio-item {
+    background: rgba(255,255,255,1);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(200,200,200,1) 76%, rgba(180,180,180,1) 100%);
+    img {
+        opacity: 1;
     }
 }
 

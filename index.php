@@ -95,13 +95,34 @@
         </div>
         <div class="container">
             <div class="row no-gutter">
-                <a href="#">
+                <a href="#" class="portfolio-link">
+                    <div class="col-lg-3 col-sm-6 portfolio-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/finnik_logo.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="portfolio-link">
+                    <div class="col-lg-3 col-sm-6 portfolio-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/finnik_logo.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="portfolio-link">
+                    <div class="col-lg-3 col-sm-6 portfolio-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/finnik_logo.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="portfolio-link">
+                    <div class="col-lg-3 col-sm-6 portfolio-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/finnik_logo.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="portfolio-link">
                     <div class="col-lg-3 col-sm-6 portfolio-item">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/finnik_logo.jpg" alt="">
                     </div>
                 </a>
             </div>
         </div>
+        
     </section>
 
     <section class="bg-primary" id="contact">
