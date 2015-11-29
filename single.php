@@ -33,16 +33,34 @@ get_header(); ?>
         
     </section>
     
-    <section class="bg-light">
-        <div class="container">
+    <section style="position: relative;">
+        <div class="container">    
             <div class="row">
-                <div class="col-md-6 text-justify">
-                   collumn 1
-                </div>
-                <div class="col-md-6 text-justify">
-                   collumn 2
+                <div class="col-sm-12">
                 </div>
             </div>
+        </div>
+        <div class="container">            
+            <div class="row">
+                <div class="col-md-6 text-justify">
+                   Stel: je hebt niks behalve het idee dat er nog wel ruimte is voor een hamburgertent in Antwerpen. Wie vind je dan zo gek om zonder enige garantie vooraf mee te denken over het totaalconcept, van 
+positionering tot inrichting, van huisstijl tot muurschildering, 
+van strategie tot social media en van naam tot faam? Precies: Bubo Bubo. En het resultaat was overdonderend met rijen tot op straat. 
+
+                </div>
+                <div class="col-md-6 text-justify">
+                   Hoewel we schandalig lang op ons geld hebben moeten wachten 
+zijn we trots op wat er staat. Kijk, kies en geniet zelf als je in 
+Antwerpen bent: Burgers & Booze. Leopold de Waelstraat 7.  
+Check de website>>
+                </div>
+            </div>
+        </div>
+        <div class="filler bg-light"></div>
+        <div class="portfolio-bg">
+            <svg version="1.1" class="curved-top" x="0px" y="0px" viewBox="0 396 612 15.75" enable-background="new 0 0 612 792" xml:space="preserve">
+                <path class="bg-light" d="M0,396c0,0,92,15.75,306,15.75S612,396,612,396H0z"/>
+            </svg>
         </div>
     </section>
         
