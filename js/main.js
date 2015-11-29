@@ -5,8 +5,8 @@ $( document ).ready(function() {
     // Do the injection
     SVGInjector(mySVGsToInject);
     
-    var showtext = 2700;
-    var fade = 1500;
+    var showtext = 2200;
+    var fade = 800;
 
     $('#cycleThis li:first-child').each(function(){
         checkFade($(this));

@@ -8478,9 +8478,11 @@ p {
   font-size: 16px;
   line-height: 1.5; }
 
+#cycleThis svg {
+  width: 50%; }
 #cycleThis li {
   display: none;
-  font-size: 46px;
+  font-size: 26px;
   font-weight: bold;
   list-style: none; }
 
@@ -8510,7 +8512,7 @@ aside {
 
 .header-logo {
   height: 60px;
-  padding: 15px 0; }
+  padding: 10px 0 15px; }
 
 .navbar-default {
   border: none;
@@ -8548,8 +8550,14 @@ aside {
   background-color: transparent; }
 
 @media (min-width: 768px) {
+  .navbar-right {
+    margin-top: 3px; }
+
   .navbar-default {
-    background: rgba(0, 0, 0, 0.4); }
+    background: rgba(0, 0, 0, 0.4);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(63, 63, 63, 0.4) 51%, rgba(63, 63, 63, 0.4) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(63, 63, 63, 0.4) 51%, rgba(63, 63, 63, 0.4) 100%);
+    vertical-align: bottom; }
 
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7); }

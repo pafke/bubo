@@ -44,12 +44,16 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
-
-#cycleThis li {
-    display: none;
-    font-size: 46px;
-    font-weight: bold;
-    list-style: none;
+#cycleThis{
+    svg {
+        width: 50%;
+    }
+    li {
+        display: none;
+        font-size: 26px;
+        font-weight: bold;
+        list-style: none;
+    }
 }
 
 .bg-primary {
@@ -84,7 +88,7 @@ aside {
 
 .header-logo{
     height: 60px;
-    padding: 15px 0;
+    padding: 10px 0 15px;
 }
 
 .navbar-default {
@@ -130,8 +134,13 @@ aside {
 }
 
 @media(min-width:768px) {
+    .navbar-right {
+        margin-top: 3px;
+    }
     .navbar-default {
         background: rgba(0,0,0,.4);
+        background: linear-gradient(to bottom, rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 50%,rgba(63,63,63,.4) 51%,rgba(63,63,63,.4) 100%);
+        vertical-align: bottom;
     }
 
     .navbar-default .navbar-header .navbar-brand {

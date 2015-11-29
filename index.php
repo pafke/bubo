@@ -3,9 +3,11 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <ul id="cycleThis">
-                    <li>Text heading 1</li>
-                    <li>Dit is text heading 2</li>
-                    <li>De 3e text heading</li>
+                    <li>In our flight through the darkness of our minds</li>
+                    <li>We collect ideas for you to shine in daylight</li>
+                    <li>We don’t hunt for you</li>
+                    <li>But for your clients or audience</li>
+                    <li>To make them clear what you are standing for</li>
                     <li><img class="inject-me" src="<?php echo get_template_directory_uri(); ?>/img/logo_bubo.svg"></li>
                 </ul>
             </div>
