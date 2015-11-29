@@ -29,8 +29,7 @@ $( document ).ready(function() {
         var total = Math.round(event.target.duration * 1000);        
         if ( (( total - current ) < 4000) && checkvar == true) {
             checkvar = false;
-            console.log('fade out');
-            $(this).fadeOut(4000);
+            //$(this).fadeOut(4000);
             /* var oldClass = $('#cycleThis svg').attr('class');
             $('#cycleThis svg').attr('class',oldClass+' showBubo'); */
         } 
