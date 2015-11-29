@@ -59,11 +59,18 @@ p {
 .bg-portfolio {
     background-size: cover;
     height: 500px;
+    position: relative;
+    overflow: hidden;
 }
 
 .bg-primary {
     background-color: #030304;
     fill: #030304;
+}
+
+.bg-light {
+    background-color: #FFF;
+    fill: #FFF;
 }
 
 .bg-dark {
