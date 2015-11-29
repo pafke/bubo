@@ -51,10 +51,14 @@ p {
     li {
         display: none;
         font-size: 26px;
-        font-weight: bold;
         list-style: none;
-        text-shadow: 2px 2px rgba(0,0,0,.3);
+        text-shadow: 1px 2px rgba(0,0,0,.3);
     }
+}
+
+.bg-portfolio {
+    background-size: cover;
+    height: 500px;
 }
 
 .bg-primary {
@@ -246,7 +250,7 @@ header .header-content .header-content-inner p {
 
 @media(min-width:768px) {
     header {
-        min-height: 100%;
+        min-height: 500px;
     }
 
     header .header-content {
@@ -519,10 +523,10 @@ body {
 
 video {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 80%;
     width: auto;
     height: auto;
     z-index: -100;
