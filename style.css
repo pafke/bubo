@@ -8937,6 +8937,17 @@ video {
 #contact {
   position: relative; }
 
+#contact:before {
+  content: "";
+  background-color: black;
+  height: 1px;
+  display: block;
+  top: -1px;
+  position: absolute;
+  width: 100%;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 10%, white 51%, rgba(255, 255, 255, 0) 90%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, white 51%, rgba(255, 255, 255, 0) 90%); }
+
 .logo-cut-bottom {
   position: absolute;
   height: 10%;
