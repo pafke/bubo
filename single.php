@@ -1,8 +1,10 @@
 <?php
 
 get_header(); ?>
-
-    <section class="bg-portfolio" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/bg_burger.png');">
+    <?php
+    $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+    ?>
+    <section class="bg-portfolio" style="background-image: url('<?php echo $feat_image; ?>');">
         <div class="container">
         </div>
         
@@ -33,10 +35,17 @@ get_header(); ?>
         
     </section>
     
-    <section style="position: relative;">
-        <div class="container">    
+    <section class="portfolio-content">
+        <div class="container-fluid">    
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12" style="text-align: center;">
+                    <?php 
+                    $image = get_field('logo');
+                    $size = 'logo_size';
+                    $thumb = $image['sizes'][ $size ];
+                    if( !empty($image) ): ?>
+                        <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
