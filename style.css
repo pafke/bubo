@@ -8886,6 +8886,9 @@ video {
 /* Portfolio */
 #portfolio {
   position: relative;
+  background: #454445;
+  background: -webkit-radial-gradient(center, ellipse, #454445 0%, #2e2e2e 100%);
+  background: radial-gradient(ellipse at center, #454445 0%, #2e2e2e 100%);
   padding-top: 0; }
 
 .portfolio-item {
