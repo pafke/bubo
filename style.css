@@ -8908,9 +8908,6 @@ video {
 /* Portfolio */
 #portfolio {
   position: relative;
-  background: #454445;
-  background: -webkit-radial-gradient(center, ellipse, #454445 0%, #2e2e2e 100%);
-  background: radial-gradient(ellipse at center, #454445 0%, #2e2e2e 100%);
   padding-top: 0; }
 
 .portfolio-item {
@@ -8943,8 +8940,23 @@ video {
     opacity: 1; }
 
 .portfolio-bg {
+  background: #454445;
+  background: -webkit-radial-gradient(center, ellipse, #454445 0%, #2e2e2e 100%);
+  background: radial-gradient(ellipse at center, #454445 0%, #2e2e2e 100%);
   width: 100%;
-  height: 390px;
+  height: 255px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1; }
+
+.filler {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -2; }
+
+.curved-top {
   position: absolute;
   top: 0; }
 

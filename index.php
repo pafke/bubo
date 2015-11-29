@@ -87,11 +87,6 @@
     </section>
 
     <section id="portfolio">
-        <div class="portfolio-bg bg-primary">
-            <svg version="1.1" class="curved-bottom" x="0px" y="0px" viewBox="0 396 612 15.75" enable-background="new 0 0 612 792" xml:space="preserve">
-                <path class="bg-primary" d="M0,396c0,0,92,15.75,306,15.75S612,396,612,396H0z"/>
-            </svg>
-        </div>
 		<div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -147,7 +142,12 @@
                 ?>
             </div>
         </div>
-        
+        <div class="filler bg-primary"></div>
+        <div class="portfolio-bg">
+            <svg version="1.1" class="curved-top" x="0px" y="0px" viewBox="0 396 612 15.75" enable-background="new 0 0 612 792" xml:space="preserve">
+                <path class="bg-primary" d="M0,396c0,0,92,15.75,306,15.75S612,396,612,396H0z"/>
+            </svg>
+        </div>
     </section>   
 
     <?php get_footer(); ?>
