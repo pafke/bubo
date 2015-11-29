@@ -39,8 +39,7 @@
         </svg>
 
     </header>
-	<video autoplay  poster="<?php echo get_template_directory_uri(); ?>/img/bg_vid2.jpg" id="bgvid" class="grayscale">
-	  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+	<video autoplay  poster="<?php echo get_template_directory_uri(); ?>/img/bg_vid2.jpg" id="bgvid" class="grayscale">	  
 	<source src="<?php echo get_template_directory_uri(); ?>/assets/owl.webm" type="video/webm">
 	<source src="<?php echo get_template_directory_uri(); ?>/assets/owl.mp4" type="video/mp4">
 	</video>
@@ -58,28 +57,28 @@
                 <div class="col-lg-3 col-md-6 text-justify">
                     <div class="service-box">
 					    <h3>Strategy</h3>
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/strategy.svg">
                         <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-justify">
                     <div class="service-box">
 					    <h3>Branding</h3>
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/branding.svg">
                         <p>T. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-justify">
                     <div class="service-box">
 						<h3>Concepting</h3>
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/concepting.svg">
                         <p>This is in gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-justify">
                     <div class="service-box">
 						<h3>Developing</h3>
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/developing.svg">
                         <p>This. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
                     </div>
                 </div>

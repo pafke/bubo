@@ -53,6 +53,7 @@ p {
         font-size: 26px;
         font-weight: bold;
         list-style: none;
+        text-shadow: 2px 2px rgba(0,0,0,.3);
     }
 }
 
@@ -278,6 +279,16 @@ header .header-content .header-content-inner p {
 .service-box {
     margin: 50px auto 0;
     max-width: 400px;
+    img {
+        display: inline-block;
+        height: 100px;
+        vertical-align: bottom;
+        margin-left: 10px;
+    }
+    h3 {
+        display: inline-block;
+        color: #ed702a;
+    }
 }
 
 @media(min-width:992px) {
@@ -289,11 +300,6 @@ header .header-content .header-content-inner p {
 .service-box p {
     margin-bottom: 0;
 	font-size: 12px;
-}
-
-.service-box h3 {
-	display: inline-block;
-	margin-right: 10px;
 }
 
 .portfolio-box {
