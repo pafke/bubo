@@ -126,6 +126,25 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/finnik_logo.jpg" alt="">
                     </div>
                 </a>
+                <?php
+                $args = array( 'post_type' => 'portfolio_item');
+                $loop = new WP_Query( $args );
+                while ( $loop->have_posts() ) : $loop->the_post();
+                ?>
+                <a href="<?php the_permalink(); ?>" class="portfolio-link">
+                    <div class="col-lg-3 col-sm-6 portfolio-item">
+                        <?php 
+                        $image = get_field('logo');
+                        $size = 'logo_size';
+                        $thumb = $image['sizes'][ $size ];
+                        if( !empty($image) ): ?>
+                            <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <?php endif; ?>
+                    </div>
+                </a>
+                <?php
+                endwhile;
+                ?>
             </div>
         </div>
         
