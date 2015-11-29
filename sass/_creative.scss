@@ -557,16 +557,14 @@ video {
 }
 .portfolio-bg {
     width: 100%;
-    height: 410px;
+    height: 390px;
     position: absolute;
     top: 0;
 }
-.curved-bottom path{
-    fill: red;
-}
 .curved-bottom {
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
+    transform: translateY(+100%);
 }
 
 /* Bootstrap overrides */
