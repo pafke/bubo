@@ -78,7 +78,7 @@ aside {
     padding: 0;
 }
 .grayscale {
-    -webkit-filter: grayscale(1); 
+    -webkit-filter: grayscale(1);
     filter: grayscale(1);
 }
 
@@ -130,7 +130,7 @@ aside {
 }
 
 @media(min-width:768px) {
-    .navbar-default {        
+    .navbar-default {
         background: rgba(0,0,0,.4);
     }
 
@@ -543,7 +543,7 @@ video {
     img {
         transition: all 500ms ease-in-out;
         position: relative;
-        top: 50%;        
+        top: 50%;
         transform: translateY(-50%);
         max-width: 140px;
         max-height: 90px;
@@ -572,6 +572,29 @@ video {
 /* Frontpage bottom */
 #contact {
     position: relative;
+    padding-top: 40px;
+    a {
+        color: #FFF;        
+    }
+    span {
+        color: #ed702a;
+    }
+    img {
+        width: 10%;
+    }
+    .container-img {
+        display: table-cell;
+        width: 40px;
+        margin-right: 20px;
+        float: left;
+        img {
+            width: 100%;
+        }
+    }
+    .container-content {
+        display: table-cell;
+        width: auto;
+    }
 }
 #contact:before {
     content: "";
@@ -589,6 +612,13 @@ video {
     width: 100%;
     top: 0;
     transform: translateY(-100%);
+}
+
+h4 {
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 14px;
 }
 
 /* Bootstrap overrides */

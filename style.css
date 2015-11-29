@@ -8935,7 +8935,24 @@ video {
 
 /* Frontpage bottom */
 #contact {
-  position: relative; }
+  position: relative;
+  padding-top: 40px; }
+  #contact a {
+    color: #FFF; }
+  #contact span {
+    color: #ed702a; }
+  #contact img {
+    width: 10%; }
+  #contact .container-img {
+    display: table-cell;
+    width: 40px;
+    margin-right: 20px;
+    float: left; }
+    #contact .container-img img {
+      width: 100%; }
+  #contact .container-content {
+    display: table-cell;
+    width: auto; }
 
 #contact:before {
   content: "";
@@ -8956,5 +8973,11 @@ video {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%); }
+
+h4 {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 14px; }
 
 /* Bootstrap overrides */

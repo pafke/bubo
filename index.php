@@ -153,18 +153,31 @@
         </svg>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <div class="col-lg-2 col-sm-3">
+                    <h4>Adress</h3>
+                    Torenallee 62,22<br>
+                    5617 BD, Eindhoven
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
+                <div class="col-lg-2 col-sm-3">
+                    <h4>Contact Thijs:</h3>
+                    <a href="mailto:thijs@bubobubo.eu"><span>thijs</span>@bubobubo.eu</a>
+                    <span>+</span>31 6 427 69 996
                 </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                <div class="col-lg-2 col-sm-3">
+                    <h4>Contact Ben:</h3>
+                    <a href="mailto:ben@bubobubo.eu"><span>ben</span>@bubobubo.eu</a>
+                    <span>+</span>31 6 427 69 997
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="container-about">
+                        <div class="container-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo_vert.svg">
+                        </div>
+                        <div class="container-content">
+                            <h4>About Bubo Bubo</h3> 
+                            This is Photoshop's version  of Lorem Ipsum. Proin  urna neque. Suspendisse in orci enim.Let's inspire each other with great stories from all over the world!                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
