@@ -58,6 +58,7 @@ p {
 
 .bg-portfolio {
     background-size: cover;
+    background-position: center;
     height: 500px;
     position: relative;
     overflow: hidden;
@@ -599,7 +600,7 @@ video {
 }
 .curved-top {
     position: absolute;
-    top: 0;
+    top: -1px;
 }
 .curved-bottom {
     position: absolute;
