@@ -8933,4 +8933,20 @@ video {
       -ms-transform: translateY(100%);
           transform: translateY(100%); }
 
+/* Frontpage bottom */
+#contact {
+  position: relative; }
+
+.logo-cut-bottom path {
+  fill: red; }
+
+.logo-cut-bottom {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%); }
+
 /* Bootstrap overrides */
