@@ -30,18 +30,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    <?php
+                    $items = wp_get_nav_menu_items( 'Main menu', $args );
+                    foreach ($items as $value){
+                        echo '<li><a href="'.$value->url.'">'.$value->title.'</a></li>';
+                    }
+                ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
