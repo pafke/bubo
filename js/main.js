@@ -31,8 +31,8 @@ $( document ).ready(function() {
             checkvar = false;
             console.log('fade out');
             $(this).fadeOut(4000);
-            var oldClass = $('#cycleThis svg').attr('class');
-            $('#cycleThis svg').attr('class',oldClass+' showBubo');
+            /* var oldClass = $('#cycleThis svg').attr('class');
+            $('#cycleThis svg').attr('class',oldClass+' showBubo'); */
         } 
     });
     
