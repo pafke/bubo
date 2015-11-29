@@ -96,10 +96,10 @@
         <div class="container">
             <div class="row no-gutter">
                 <a href="#">
-                    <div class="col-lg-3 col-sm-6 portfolio-item">                    
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/finnik_logo.jpg" class="img-responsive" alt="">                                
+                    <div class="col-lg-3 col-sm-6 portfolio-item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/finnik_logo.jpg" alt="">
                     </div>
-                </a>                
+                </a>
             </div>
         </div>
     </section>

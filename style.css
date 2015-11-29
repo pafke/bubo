@@ -8888,8 +8888,15 @@ video {
   background: white;
   background: -webkit-radial-gradient(center, ellipse, white 0%, white 26%, #c8c8c8 76%, #b4b4b4 100%);
   background: radial-gradient(ellipse at center, white 0%, white 26%, #c8c8c8 76%, #b4b4b4 100%);
-  height: 180px; }
+  height: 200px;
+  text-align: center; }
   .portfolio-item img {
-    display: none; }
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    max-width: 140px;
+    max-height: 90px; }
 
 /* Bootstrap overrides */
