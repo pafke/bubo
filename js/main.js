@@ -35,5 +35,12 @@ $( document ).ready(function() {
         } 
     });
     
-    
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+            slideWidth: 325,
+            minSlides: 5,
+            maxSlides: 5,
+            pager: false
+        });
+    });
 });

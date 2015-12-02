@@ -20,9 +20,6 @@ hr.light {
 
 a {
     color: #ed702a;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
 }
 
 a:hover,
@@ -152,7 +149,6 @@ aside {
     }
     .navbar-default {
         background: rgba(0,0,0,.4);
-        background: linear-gradient(to bottom, rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 50%,rgba(63,63,63,.4) 51%,rgba(63,63,63,.4) 100%);
         vertical-align: bottom;
     }
 
@@ -664,6 +660,28 @@ h4 {
 .portfolio-content {
     position: relative;
     padding-bottom: 255px;
+}
+
+.bx-wrapper .bx-viewport {
+    border: none;
+    box-shadow: none;
+}
+
+.portfolio-title {
+    font-size: 21px;
+    font-weight: bold;
+    span {
+        font-weight: normal;
+    }
+}
+
+.slider {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.portfolio-link {
+    display: block;
 }
 
 /* Bootstrap overrides */

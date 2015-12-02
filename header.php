@@ -9,7 +9,10 @@
 
     <title>Bubo bubo</title>
     
+    <link href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" rel="stylesheet" />
     <?php wp_head(); ?>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.min.js"></script>
+    
 </head>
 
 <body id="page-top">

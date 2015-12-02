@@ -38,14 +38,39 @@ get_header(); ?>
     <section class="portfolio-content">
         <div class="container-fluid">    
             <div class="row">
-                <div class="col-sm-12" style="text-align: center;">
+                <div class="col-sm-12 slider">
                     <?php 
                     $image = get_field('logo');
-                    $size = 'logo_size';
+                    $size = 'slider_size';
                     $thumb = $image['sizes'][ $size ];
                     if( !empty($image) ): ?>
-                        <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+                       
                     <?php endif; ?>
+                    
+                    <ul class="bxslider">
+                        <li> <img width="325"src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" /></li>
+                        <?php $attachments = new Attachments( 'my_attachments' ); ?>
+                        <?php if( $attachments->exist() ) : ?>
+                            <?php while( $attachments->get() ) : ?>
+                              <li>
+                                <?php echo $attachments->image( 'slider_size' ); ?><br />
+                              </li>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="portfolio-title">
+                        <?php the_title(); ?>,
+                        <span>Bakken en Bier drinken dat is het concept van antwerpen:)</span>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -61,7 +86,7 @@ van strategie tot social media en van naam tot faam? Precies: Bubo Bubo. En het 
                    Hoewel we schandalig lang op ons geld hebben moeten wachten 
 zijn we trots op wat er staat. Kijk, kies en geniet zelf als je in 
 Antwerpen bent: Burgers & Booze. Leopold de Waelstraat 7.  
-Check de website>>
+<a href="#" class="portfolio-link">Check de website>></a>
                 </div>
             </div>
         </div>
