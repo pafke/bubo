@@ -6412,6 +6412,12 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /*# sourceMappingURL=bootstrap.css.map */
+@font-face {
+  font-family: 'capricorn';
+  src: url("assets/capricornosf-black-2-webfont.eot");
+  src: url("assets/capricornosf-black-2-webfont.eot?#iefix") format("embedded-opentype"), url("assets/capricornosf-black-2-webfont.woff2") format("woff2"), url("assets/capricornosf-black-2-webfont.woff") format("woff"), url("assets/capricornosf-black-2-webfont.ttf") format("truetype"), url("assets/capricornosf-black-2-webfont.svg#capricorn") format("svg");
+  font-weight: normal;
+  font-style: normal; }
                  /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -8564,6 +8570,9 @@ p {
 .bg-primary {
   background-color: #030304;
   fill: #030304; }
+
+.font-title {
+  font-family: 'capricorn'; }
 
 .bg-light {
   background-color: #FFF;

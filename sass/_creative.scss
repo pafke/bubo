@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-
+    
 }
 
 p {
@@ -64,6 +64,10 @@ p {
 .bg-primary {
     background-color: #030304;
     fill: #030304;
+}
+
+.font-title {
+    font-family: 'capricorn';
 }
 
 .bg-light {
@@ -608,6 +612,7 @@ video {
     height: 1px;
     border-top: 1px solid #030304;
 }
+
 .divider:before {
     content: "";
     background-color: #030304;
