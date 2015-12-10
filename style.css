@@ -6418,6 +6418,42 @@ button.close {
   src: url("assets/capricornosf-black-2-webfont.eot?#iefix") format("embedded-opentype"), url("assets/capricornosf-black-2-webfont.woff2") format("woff2"), url("assets/capricornosf-black-2-webfont.woff") format("woff"), url("assets/capricornosf-black-2-webfont.ttf") format("truetype"), url("assets/capricornosf-black-2-webfont.svg#capricorn") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'aller';
+  src: url("assets/aller_bd-webfont.eot");
+  src: url("assets/aller_bd-webfont.eot?#iefix") format("embedded-opentype"), url("assets/aller_bd-webfont.woff2") format("woff2"), url("assets/aller_bd-webfont.woff") format("woff"), url("assets/aller_bd-webfont.ttf") format("truetype"), url("assets/aller_bd-webfont.svg#aller") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'aller';
+  src: url("assets/aller_bdit-webfont.eot");
+  src: url("assets/aller_bdit-webfont.eot?#iefix") format("embedded-opentype"), url("assets/aller_bdit-webfont.woff2") format("woff2"), url("assets/aller_bdit-webfont.woff") format("woff"), url("assets/aller_bdit-webfont.ttf") format("truetype"), url("assets/aller_bdit-webfont.svg#aller") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'aller';
+  src: url("assets/aller_it-webfont.eot");
+  src: url("assets/aller_it-webfont.eot?#iefix") format("embedded-opentype"), url("assets/aller_it-webfont.woff2") format("woff2"), url("assets/aller_it-webfont.woff") format("woff"), url("assets/aller_it-webfont.ttf") format("truetype"), url("assets/aller_it-webfont.svg#alleritalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'aller';
+  src: url("assets/aller_lt-webfont.eot");
+  src: url("assets/aller_lt-webfont.eot?#iefix") format("embedded-opentype"), url("assets/aller_lt-webfont.woff2") format("woff2"), url("assets/aller_lt-webfont.woff") format("woff"), url("assets/aller_lt-webfont.ttf") format("truetype"), url("assets/aller_lt-webfont.svg#aller_lightregular") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'aller';
+  src: url("assets/aller_ltit-webfont.eot");
+  src: url("assets/aller_ltit-webfont.eot?#iefix") format("embedded-opentype"), url("assets/aller_ltit-webfont.woff2") format("woff2"), url("assets/aller_ltit-webfont.woff") format("woff"), url("assets/aller_ltit-webfont.ttf") format("truetype"), url("assets/aller_ltit-webfont.svg#aller_lightitalic") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+@font-face {
+  font-family: 'aller';
+  src: url("assets/aller_rg-webfont.eot");
+  src: url("assets/aller_rg-webfont.eot?#iefix") format("embedded-opentype"), url("assets/aller_rg-webfont.woff2") format("woff2"), url("assets/aller_rg-webfont.woff") format("woff"), url("assets/aller_rg-webfont.ttf") format("truetype"), url("assets/aller_rg-webfont.svg#allerregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
                  /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -8552,13 +8588,16 @@ p {
   font-size: 16px;
   line-height: 1.5; }
 
-#cycleThis svg {
-  width: 50%; }
-#cycleThis li {
-  display: none;
-  font-size: 26px;
-  list-style: none;
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.3); }
+#cycleThis {
+  font-family: aller;
+  font-weight: bold; }
+  #cycleThis svg {
+    width: 50%; }
+  #cycleThis li {
+    display: none;
+    font-size: 26px;
+    list-style: none;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.3); }
 
 .bg-portfolio {
   background-size: cover;
