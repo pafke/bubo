@@ -8610,6 +8610,10 @@ p {
   background-color: #030304;
   fill: #030304; }
 
+.paragraph-times {
+  font-size: 14px;
+  font-family: Georgia, Serif; }
+
 .font-title {
   font-family: 'capricorn'; }
 
@@ -8682,7 +8686,7 @@ aside {
     margin-top: 3px; }
 
   .navbar-default {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     vertical-align: bottom; }
 
   .navbar-default .navbar-header .navbar-brand {
@@ -9019,7 +9023,7 @@ video {
   position: relative; }
 
 .portfolio-item {
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
   background: #c8c8c8;
   background: radial-gradient(ellipse at center, #c8c8c8 0%, #c8c8c8 26%, #a0a0a0 76%, #828282 100%);
   height: 200px;
@@ -9027,7 +9031,7 @@ video {
   border-right: solid 1px #030304;
   border-top: solid 1px #030304; }
   .portfolio-item img {
-    transition: all 500ms ease-in-out;
+    transition: all 300ms ease-in-out;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -9081,6 +9085,9 @@ video {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 51%, rgba(255, 255, 255, 0) 100%); }
 
 /* Frontpage bottom */
+section:last-child {
+  background: red; }
+
 #contact {
   position: relative;
   padding-top: 40px; }
@@ -9134,10 +9141,11 @@ h4 {
   box-shadow: none; }
 
 .portfolio-title {
-  font-size: 21px;
+  font-family: aller;
+  font-size: 22px;
   font-weight: bold; }
   .portfolio-title span {
-    font-weight: normal; }
+    font-weight: 100; }
 
 .slider {
   text-align: center;
