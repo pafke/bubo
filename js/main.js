@@ -37,10 +37,17 @@ $( document ).ready(function() {
     
     $(document).ready(function(){
         $('.bxslider').bxSlider({
+            onSliderLoad: function(){
+                $('.bx-viewport').prepend('<div class="slider-overlay"></div>');
+            },
             slideWidth: 325,
             minSlides: 5,
             maxSlides: 5,
-            pager: false
+            pager: false,
+            moveSlides: 1,
+            onSlideAfter: function(){
+                console.log('slide ended');
+            }
         });
     });
 });
