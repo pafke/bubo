@@ -54,10 +54,12 @@ get_header(); ?>
                         <?php if( $attachments->exist() ) : ?>
                             <?php while( $attachments->get() ) :  $counter = $counter+1;?>
                               <?php if($counter == 3){ ?>
-                                <li> <img width="325"src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" /></li>
+                              <li class="slider-logo"> 
+                                <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+                              </li>
                               <?php } ?>
                               <li>
-                                <?php echo $attachments->image( 'slider_size' ); ?><br />
+                                <?php echo $attachments->image( 'slider_size' ); ?>
                               </li>
                             <?php endwhile; ?>
                         <?php endif; ?>

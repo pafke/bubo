@@ -721,4 +721,20 @@ h4 {
     display: block;
 }
 
+.bxslider li {
+    border: solid red 1px;
+    position: relative;
+    img {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+}
+.bxslider li:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+
+}
+
 /* Bootstrap overrides */
