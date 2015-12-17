@@ -48,11 +48,14 @@ get_header(); ?>
                        
                     <?php endif; ?>
                     
-                    <ul class="bxslider">
-                        <li> <img width="325"src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" /></li>
+                    <ul class="bxslider">                        
+                        <?php $counter = 0; ?>
                         <?php $attachments = new Attachments( 'my_attachments' ); ?>
                         <?php if( $attachments->exist() ) : ?>
-                            <?php while( $attachments->get() ) : ?>
+                            <?php while( $attachments->get() ) :  $counter = $counter+1;?>
+                              <?php if($counter == 3){ ?>
+                                <li> <img width="325"src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" /></li>
+                              <?php } ?>
                               <li>
                                 <?php echo $attachments->image( 'slider_size' ); ?><br />
                               </li>
