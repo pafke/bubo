@@ -8,7 +8,7 @@ get_header(); ?>
     <section class="bg-portfolio" style="background-image: url('<?php echo $feat_image; ?>');">
         <div class="container">
         </div>
-        
+
         <svg version="1.1" class="curved-border logo-cut" x="0px" y="0px" viewBox="0 0 189.8 64.81" enable-background="new 0 0 189.8 64.81" xml:space="preserve">
             <g>
                 <path class="bg-light" d="M156.645,27.139c2.885-0.298,5.859-0.595,8.645-1.076c11.186-1.884,14.92-11.269,16.118-18.38
@@ -33,33 +33,38 @@ get_header(); ?>
         <svg version="1.1" class="curved-border"  x="0px" y="0px" viewBox="0 401.6 612 11.4" style="enable-background:new 0 401.6 612 11.4;" xml:space="preserve">
             <path class="bg-light" d="M612,413H0v-11.4c0,0,92,11.4,306,11.4s306-11.4,306-11.4V413z"/>
         </svg>
-        
+
     </section>
-    
+
     <section>
-        <div class="container-fluid">    
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 slider">
-                    <?php 
+                    <?php
                     $image = get_field('logo');
                     $size = 'slider_size';
                     $thumb = $image['sizes'][ $size ];
                     if( !empty($image) ): ?>
-                       
+
                     <?php endif; ?>
-                    
-                    <ul class="bxslider">                        
+
+                    <ul class="bxslider">
                         <?php $counter = 0; ?>
-                        <?php $attachments = new Attachments( 'my_attachments' ); ?>
+                        <?php $attachments = new Attachments( 'my_attachments' ); ?>                       
                         <?php if( $attachments->exist() ) : ?>
+                            
                             <?php while( $attachments->get() ) :  $counter = $counter+1;?>
+                            <?php
+                            $attachment_id = $attachments->id();
+                            $sliderSizeUrl = wp_get_attachment_image_src( $attachment_id, $size);
+                            ?>
                               <?php if($counter == 3){ ?>
-                              <li class="slider-logo"> 
+                              <li class="slider-logo" >
                                 <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
                               </li>
                               <?php } ?>
                               <li>
-                                <?php echo $attachments->image( 'slider_size' ); ?>
+                                <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>);"></span>
                               </li>
                             <?php endwhile; ?>
                         <?php endif; ?>
@@ -67,9 +72,9 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        
-        
-        
+
+
+
         <div class="container paragraph-times">
             <div class="row">
                 <div class="col-md-6">
@@ -80,7 +85,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="container paragraph-times">            
+        <div class="container paragraph-times">
             <div class="row">
                 <div class="col-md-6 text-justify">
                     <?php the_content(); ?>
@@ -89,7 +94,7 @@ get_header(); ?>
                     <?php the_field('kolum2'); ?>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
 
 <?php endwhile; endif; ?>
