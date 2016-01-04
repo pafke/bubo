@@ -122,7 +122,7 @@
                     </div>
                 </a>
                 <?php
-                $args = array( 'post_type' => 'portfolio_item');
+                $args = array( 'post_type' => 'post');
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post();
                 ?>

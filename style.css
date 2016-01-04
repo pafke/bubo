@@ -8606,6 +8606,9 @@ p {
   position: relative;
   overflow: hidden; }
 
+.work {
+  background-image: url("img/bg_work.jpg"); }
+
 .bg-primary {
   background-color: #030304;
   fill: #030304; }

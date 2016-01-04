@@ -38,7 +38,7 @@ function my_attachments( $attachments )
     // title of the meta box (string)
     'label'         => 'Portfolio slideshow',
     // all post types to utilize (string|array)
-    'post_type'     => array( 'portfolio_item' ),
+    'post_type'     => array( 'post' ),
     // allowed file type(s) (array) (image|video|text|audio|application)
     'filetype'      => null,  // no filetype limit
     // include a note within the meta box (string)

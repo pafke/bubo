@@ -1,11 +1,8 @@
 <?php
 
 get_header(); ?>
-    <?php if(have_posts()): while(have_posts()): the_post(); ?>
-    <?php
-    $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-    ?>
-    <section class="bg-portfolio" style="background-image: url('<?php echo $feat_image; ?>');">
+
+    <section class="bg-portfolio work">
         <div class="container">
         </div>
 
@@ -35,65 +32,11 @@ get_header(); ?>
         </svg>
 
     </section>
+    
+    
+    <?php wp_list_categories( $args ); ?> 
+    test
+    
+    
 
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 slider">
-                    <?php
-                    $image = get_field('logo');
-                    $size = 'slider_size';
-                    $thumb = $image['sizes'][ $size ];
-                    if( !empty($image) ): ?>
-
-                    <?php endif; ?>
-
-                    <ul class="bxslider">
-                        <?php $counter = 0; ?>
-                        <?php $attachments = new Attachments( 'my_attachments' ); ?>
-                        <?php if( $attachments->exist() ) : ?>
-
-                            <?php while( $attachments->get() ) :  $counter = $counter+1;?>
-                            <?php
-                            $attachment_id = $attachments->id();
-                            $sliderSizeUrl = wp_get_attachment_image_src( $attachment_id, $size);
-                            ?>
-                              <?php if($counter == 3){ ?>
-                              <li class="slider-logo" >
-                                <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
-                              </li>
-                              <?php } ?>
-                              <li>
-                                <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>);"></span>
-                              </li>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container paragraph-times">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="portfolio-title">
-                        <?php the_title(); ?>,
-                        <span><?php the_field('subtitle'); ?></span>
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="container paragraph-times">
-            <div class="row">
-                <div class="col-md-6 text-justify">
-                    <?php the_content(); ?>
-                </div>
-                <div class="col-md-6 text-justify">
-                    <?php the_field('kolom2'); ?>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<?php endwhile; endif; ?>
 <?php get_footer(); ?>
