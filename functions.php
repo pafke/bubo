@@ -17,20 +17,6 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
-  register_post_type( 'portfolio_item',
-    array(
-      'labels' => array(
-        'name' => __( 'Portfolio items' ),
-        'singular_name' => __( 'Portfolio item' )
-      ),
-      'supports' => array( 'title', 'editor', 'thumbnail',),
-      'public' => true,
-      'has_archive' => true,
-    )
-  );
-}
 
 function my_attachments( $attachments )
 {

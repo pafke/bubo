@@ -32,40 +32,34 @@ get_header(); ?>
         </svg>
 
     </section>
-
+    
     <section id="portfolio" class="bg-light">
         <div class="container">
-            <div class="row no-gutter">
-                <?php
-                $showTheseCats = get_option('show_these_cats');
-                if($showTheseCats[checkbox]){
-                    $the_cats = $showTheseCats[checkbox];
-                }
-                ?>
-                <?php
-                $terms = apply_filters( 'taxonomy-images-get-terms', '', array('taxonomy' => 'category') );
-                foreach( (array) $terms as $term ) {
-                    if (!in_array($term->term_id, $the_cats)) {
-                        $the_permalink = get_term_link( $term, $taxonomy );
-                        $the_name = $term->name;
-                        $the_image = wp_get_attachment_image_src( $term->image_id, 'slider_size' );
-                ?>
-
-                <a href="<?php echo $the_permalink; ?>" class="portfolio-link">
+            <div class="row no-gutter">     
+            
+            <?php if ( have_posts() ) : ?>
+			<?php /* The loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<a href="<?php the_permalink(); ?>" class="portfolio-link">
                     <div class="col-lg-3 col-sm-6 portfolio-item">
-                        <div class="title_container">
-                            <h2><?php echo $the_name; ?></h2>
-                        </div>
-                        <div class="portfolio-image" style="background-image:url('<?php echo $the_image[0]; ?>');"></div>
+                        <?php 
+                        $image = get_field('logo');
+                        $size = 'logo_size';
+                        $thumb = $image['sizes'][ $size ];
+                        if( !empty($image) ): ?>
+                            <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <?php endif; ?>
                     </div>
                 </a>
+			<?php endwhile; ?>
 
-                <?php
-                    }
-                }
-                ?>
+            <?php endif; ?>
             </div>
         </div>
-    </section>
+    </section>   
+
+    
+
+<?php get_posts(); ?>
 
 <?php get_footer(); ?>

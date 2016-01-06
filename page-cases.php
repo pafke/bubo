@@ -37,32 +37,16 @@ get_header(); ?>
         <div class="container">
             <div class="row no-gutter">
                 <?php
-                $showTheseCats = get_option('show_these_cats');
-                if($showTheseCats[checkbox]){
-                    $the_cats = $showTheseCats[checkbox];
-                }
-                ?>
-                <?php
-                $terms = apply_filters( 'taxonomy-images-get-terms', '', array('taxonomy' => 'category') );
-                foreach( (array) $terms as $term ) {
-                    if (!in_array($term->term_id, $the_cats)) {
-                        $the_permalink = get_term_link( $term, $taxonomy );
-                        $the_name = $term->name;
-                        $the_image = wp_get_attachment_image_src( $term->image_id, 'slider_size' );
-                ?>
+                    $showTheseCats = get_option('show_these_cats');
+                    if($showTheseCats[checkbox]){
+                        $args = 'cat='. implode(', ', $showTheseCats[checkbox]).'';
+                        query_posts( $args );
 
-                <a href="<?php echo $the_permalink; ?>" class="portfolio-link">
-                    <div class="col-lg-3 col-sm-6 portfolio-item">
-                        <div class="title_container">
-                            <h2><?php echo $the_name; ?></h2>
-                        </div>
-                        <div class="portfolio-image" style="background-image:url('<?php echo $the_image[0]; ?>');"></div>
-                    </div>
-                </a>
-
-                <?php
+                        while ( have_posts() ) : the_post();
+                            the_title();
+                        endwhile;
+                        wp_reset_query();
                     }
-                }
                 ?>
             </div>
         </div>
