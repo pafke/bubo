@@ -35,7 +35,6 @@ get_header(); ?>
         </svg>
 
     </section>
-
     <section>
         <div class="container-fluid">
             <div class="row">

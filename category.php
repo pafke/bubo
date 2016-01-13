@@ -32,7 +32,6 @@ get_header(); ?>
         </svg>
 
     </section>
-    
     <section id="portfolio" class="bg-light">
         <div class="container">
             <div class="row no-gutter">     

@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-    <section class="bg-portfolio work">
+    <section class="bg-portfolio cases">
         <div class="container">
         </div>
 
