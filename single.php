@@ -8,6 +8,8 @@ get_header(); ?>
     <section class="bg-portfolio" style="background-image: url('<?php echo $feat_image; ?>');">
         <div class="container">
         </div>
+        
+        test
 
         <svg version="1.1" class="curved-border logo-cut" x="0px" y="0px" viewBox="0 0 189.8 64.81" enable-background="new 0 0 189.8 64.81" xml:space="preserve">
             <g>
