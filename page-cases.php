@@ -42,13 +42,25 @@ get_header(); ?>
                         $args = 'cat='. implode(', ', $showTheseCats[checkbox]).'';
                         query_posts( $args );
 
-                        while ( have_posts() ) : the_post();
-                            the_title();
+                        while ( have_posts() ) : the_post();                            
+                            ?>
+                            <a href="<?php the_permalink(); ?>" class="portfolio-link">
+                                <div class="col-lg-3 col-sm-6 portfolio-item">
+                                    <?php 
+                                    $image = get_field('logo');
+                                    $size = 'logo_size';
+                                    $thumb = $image['sizes'][ $size ];
+                                    if( !empty($image) ): ?>
+                                        <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
+                                    <?php endif; ?>
+                                </div>
+                            </a>
+                            <?php
                         endwhile;
                         wp_reset_query();
                     }
                 ?>
-            </div>
+            </div>            
         </div>
     </section>
 
