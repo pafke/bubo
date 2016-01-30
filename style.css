@@ -8614,6 +8614,10 @@ p {
 .cases {
   background-image: url("img/bg_case.jpg"); }
 
+.contact {
+  background-image: url("img/bg_contact.jpg");
+  background-position: top; }
+
 .bg-primary {
   background-color: #030304;
   fill: #030304; }
@@ -9221,6 +9225,29 @@ h4 {
   content: "";
   display: block;
   padding-top: 100%; }
+
+/* Contact */
+.team h2 {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 0; }
+.team .thijs {
+  text-align: right; }
+.team .subtitle {
+  color: #ed702a;
+  display: block; }
+.team .portrait {
+  background-image: url("img/logo_portrait.svg");
+  padding-bottom: 100%;
+  background-size: cover; }
+.team .thijs .portrait {
+  background-image: url("img/thijs.jpg"); }
+.team .ben .portrait {
+  background-image: url("img/ben.jpg"); }
+.team p {
+  margin: 0; }
+.team .linkedin {
+  width: 20px; }
 
 /* Bootstrap overrides */
 
