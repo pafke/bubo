@@ -59,10 +59,12 @@ get_header(); ?>
                             ?>
                               <?php if($counter == 3){ ?>
                               <li class="slider-logo" >
+                                <img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg">
                                 <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
                               </li>
                               <?php } ?>
                               <li>
+                                <img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg">
                                 <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>);"></span>
                               </li>
                             <?php endwhile; ?>

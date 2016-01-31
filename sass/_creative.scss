@@ -760,7 +760,7 @@ h4 {
     margin-bottom: 100px;
 }
 
-.carousel li.slider-logo {
+.carousel li.slick-slide {
     img {
         left: 50%;
         top:50%;
@@ -793,6 +793,15 @@ h4 {
     right: 33%;
     background-position: 100%;
     transform: translate(100%,-50%);
+}
+.carousel li.slick-slide .zoom {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    width: 80px;
+    z-index: 999;
+}
+.carousel li.slick-center .zoom {
+    opacity: 1;
 }
 
 
