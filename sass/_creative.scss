@@ -760,15 +760,6 @@ h4 {
     margin-bottom: 100px;
 }
 
-.slider-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: red;
-    z-index: 1;
-    background: linear-gradient(to right, rgba(255,255,255,0.95) 0%,rgba(255,255,255,0.95) 20%,rgba(255,255,255,0.8) 20.001%,rgba(255,255,255,0.8) 40%,rgba(255,255,255,0) 40.001%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.8) 60.001%,rgba(255,255,255,0.8) 80%,rgba(255,255,255,0.95) 80.001%,rgba(255,255,255,0.95) 100%);
-}
-
 .carousel li.slider-logo {
     img {
         left: 50%;
@@ -777,7 +768,11 @@ h4 {
         width: 265px;
     }
 }
-.slick-center {
+.carousel .slick-center {
+    opacity: 1;
+}
+.carousel .nextslide {
+    opacity: .5;
 }
 
 .portfolio-link {
@@ -785,6 +780,8 @@ h4 {
 }
 
 .carousel li {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
     position: relative;
     img {
         top: 0;

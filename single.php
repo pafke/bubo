@@ -74,6 +74,22 @@ get_header(); ?>
                         $('.carousel').slick({
                             centerMode: true,
                             slidesToShow: 5,
+                            initialSlide: 2
+                        });
+                        
+                        $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+                            $('.nextslide').removeClass('nextslide');
+                            $('.slick-center').addClass('nextslide');
+                            if(currentSlide == 0 && nextSlide != 1){
+                                $('.slick-center').prev().prev().addClass('nextslide');
+                            }
+                            else {
+                                if(nextSlide > currentSlide || nextSlide == 0 && currentSlide != 1){
+                                    $('.slick-center').next().next().addClass('nextslide');
+                                }else {
+                                    $('.slick-center').prev().prev().addClass('nextslide');
+                                }
+                            }
                         });
                     });
                     </script>
