@@ -79,6 +79,7 @@ get_header(); ?>
                         
                         $('.slick-center').next().addClass('nextslide');
                         $('.slick-center').prev().addClass('nextslide');
+                        $('.slick-arrow').html('');
                         
                         $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
                             $('.nextslide').removeClass('nextslide');
