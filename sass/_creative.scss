@@ -775,6 +775,21 @@ h4 {
     opacity: .3;
 }
 
+.slick-prev {
+    top: 50%;
+    left: 30%;
+    transform: translate(50%,-50%);
+}
+.slick-next {
+    top: 50%;
+    right: 30%;
+    transform: translate(-50%,-50%);
+}
+.slick-arrow {
+    position: absolute;
+    z-index: 1;
+}
+
 .portfolio-link {
     display: block;
 }
