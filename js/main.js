@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
     // Do the injection
     SVGInjector(mySVGsToInject);
-    
+
     var showtext = 2200;
     var fade = 800;
 
@@ -26,19 +26,19 @@ $( document ).ready(function() {
     var checkvar = true;
     $('#bgvid').on('timeupdate', function(event) {
         var current = Math.round(event.target.currentTime * 1000);
-        var total = Math.round(event.target.duration * 1000);        
+        var total = Math.round(event.target.duration * 1000);
         if ( (( total - current ) < 4000) && checkvar == true) {
             checkvar = false;
             //$(this).fadeOut(4000);
             /* var oldClass = $('#cycleThis svg').attr('class');
             $('#cycleThis svg').attr('class',oldClass+' showBubo'); */
-        } 
+        }
     });
-    
+
     $(document).ready(function(){
         $('.bxslider').bxSlider({
             onSliderLoad: function(){
-                $('.bx-viewport').prepend('<div class="slider-overlay"></div>');                
+                $('.bx-viewport').prepend('<div class="slider-overlay"></div>');
             },
             slideWidth: 325,
             minSlides: 5,
@@ -50,4 +50,10 @@ $( document ).ready(function() {
             }
         });
     });
+
+    $('.work .page-title').fitText(0.9);
+    $('.contact .page-title').fitText(0.85);
+    $('.cases .page-title').fitText(0.895);
+    $('.page-sub-title').fitText(4.67);
+
 });

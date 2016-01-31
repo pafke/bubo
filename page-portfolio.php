@@ -4,6 +4,8 @@ get_header(); ?>
 
     <section class="bg-portfolio work">
         <div class="container">
+            <h1 class="page-title">Bubowork</h1>
+            <h3 class="page-sub-title text-primary ">We zijn met zijn tweeen maar eigenlijk met veel meer</h3>
         </div>
 
         <svg version="1.1" class="curved-border logo-cut" x="0px" y="0px" viewBox="0 0 189.8 64.81" enable-background="new 0 0 189.8 64.81" xml:space="preserve">
