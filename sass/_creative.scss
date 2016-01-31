@@ -772,7 +772,7 @@ h4 {
     opacity: 1;
 }
 .carousel .nextslide {
-    opacity: .5;
+    opacity: .3;
 }
 
 .portfolio-link {
@@ -781,7 +781,7 @@ h4 {
 
 .carousel li {
     transition: opacity .3s ease-in-out;
-    opacity: 0;
+    opacity: .05;
     position: relative;
     img {
         top: 0;

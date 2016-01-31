@@ -75,7 +75,10 @@ get_header(); ?>
                             centerMode: true,
                             slidesToShow: 5,
                             initialSlide: 2
-                        });
+                        });                        
+                        
+                        $('.slick-center').next().addClass('nextslide');
+                        $('.slick-center').prev().addClass('nextslide');
                         
                         $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
                             $('.nextslide').removeClass('nextslide');
