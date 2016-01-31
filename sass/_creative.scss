@@ -746,11 +746,6 @@ h4 {
     padding-bottom: 255px;
 }
 
-.bx-wrapper .bx-viewport {
-    border: none;
-    box-shadow: none;
-}
-
 .portfolio-title {
     font-family: aller;
     font-size: 22px;
@@ -774,7 +769,7 @@ h4 {
     background: linear-gradient(to right, rgba(255,255,255,0.95) 0%,rgba(255,255,255,0.95) 20%,rgba(255,255,255,0.8) 20.001%,rgba(255,255,255,0.8) 40%,rgba(255,255,255,0) 40.001%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.8) 60.001%,rgba(255,255,255,0.8) 80%,rgba(255,255,255,0.95) 80.001%,rgba(255,255,255,0.95) 100%);
 }
 
-.bxslider li.slider-logo {
+.carousel li.slider-logo {
     img {
         left: 50%;
         top:50%;
@@ -782,12 +777,14 @@ h4 {
         width: 265px;
     }
 }
+.slick-center {
+}
 
 .portfolio-link {
     display: block;
 }
 
-.bxslider li {
+.carousel li {
     position: relative;
     img {
         top: 0;
@@ -803,7 +800,7 @@ h4 {
         top: 0;
     }
 }
-.bxslider li:before {
+.carousel li:before {
     content: "";
     display: block;
     padding-top: 100%;

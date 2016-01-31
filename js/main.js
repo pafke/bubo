@@ -35,21 +35,6 @@ $( document ).ready(function() {
         }
     });
 
-    $(document).ready(function(){
-        $('.bxslider').bxSlider({
-            onSliderLoad: function(){
-            },
-            slideWidth: 325,
-            minSlides: 5,
-            maxSlides: 5,
-            pager: false,
-            moveSlides: 1,
-            onSlideAfter: function(){
-                console.log('slide ended');
-            }
-        });
-    });
-
     $('.work .page-title').fitText(0.9);
     $('.contact .page-title').fitText(0.85);
     $('.cases .page-title').fitText(0.895);

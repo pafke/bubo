@@ -47,7 +47,7 @@ get_header(); ?>
 
                     <?php endif; ?>
 
-                    <ul class="bxslider">
+                    <ul class="carousel">
                         <?php $counter = 0; ?>
                         <?php $attachments = new Attachments( 'my_attachments' ); ?>
                         <?php if( $attachments->exist() ) : ?>
@@ -68,6 +68,18 @@ get_header(); ?>
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </ul>
+                    
+                    <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('.carousel').slick({
+                            centerMode: true,
+                            slidesToShow: 5,
+                        });
+                    });
+                    </script>
+                    
+                    
+                    
                 </div>
             </div>
         </div>
