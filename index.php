@@ -58,28 +58,28 @@
                     <div class="service-box">
 					    <h3>Strategy</h3>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/strategy.svg">
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                        <p>Elke opdracht, elk probleem wordt door ons gewikt en gewogen. Deze laterale kijk levert vaak al verrassende inzichten op. De strategie vormt het vertrekpunt van alles wat we verder ondernemen. Hoe willekeurig het soms ook lijkt, er zit altijd een duidelijke gedachte achter die opdracht, doelgroep en omgeving met elkaar verbindt.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-justify">
                     <div class="service-box">
 					    <h3>Branding</h3>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/branding.svg">
-                        <p>T. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                        <p>Jij maakt het product, wij maken het tot een merk. Door het een hart, een ziel en een gezicht te geven. Op basis van de strategie, de identiteit en een verrassende positionering. En als het merk er dan opeens is, met huisstijl, boodschap en positionering, lijkt het soms alsof het altijd al bestaan heeft.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-justify">
                     <div class="service-box">
 						<h3>Concepting</h3>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/concepting.svg">
-                        <p>This is in gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                        <p>Een goed merk verdient sterke communicatie, dankzij een concept dat je recht in het hart raakt. Dat precies vertelt wat er gezegd moet worden. En dat vooral onvergetelijk is. Als we ergens goed in zijn dan is het in conceptontwikkeling; de kurk waar alle communicatie op drijft.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-justify">
                     <div class="service-box">
 						<h3>Developing</h3>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/developing.svg">
-                        <p>This. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                        <p>Het heeft geen zin iets te bedenken als het niet gemaakt kan worden. Film, fotografie, drukwerk, programmeren en organiseren laten we graag over aan mensen die daar goed in zijn. Gelukkig zitten we in de multidisciplinaire omgeving van Strijp-CS waar al deze specialismen voorhanden zijn. En dan is het snel schakelen.</p>
                     </div>
                 </div>
             </div>

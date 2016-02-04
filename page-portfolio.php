@@ -68,6 +68,27 @@ get_header(); ?>
                 ?>
             </div>
         </div>
+        <div class="container paragraph-times">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="portfolio-title">
+                        Bubowork,
+                        <span>Je bent net zo goed als je laatste werk</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container paragraph-times">
+            <div class="row">
+                <div class="col-md-6 text-justify">
+                    <p>We zijn wel creatief, maar niet gek. Zo houden we niet van kunstjes of trucjes die zichzelf iedere keer herhalen.<br>
+                    Het gaat ons in feite om drie dingen: het concept, het concept en het concept. Als dat eenmaal rond is, komt de rest vanzelf en maakt het niet zoveel uit of het een animatie wordt, een guerrilla-actie, een advertentiecampagne of “iets op facebook”.<p>
+                </div>
+                <div class="col-md-6 text-justify">
+                    <p>Maar het kan natuurlijk zijn dat je alleen geïnteresseerd bent in huisstijlen of in radiocommercials. Om het makkelijk te maken hebben we hier wat specialismen bij elkaar gezet. Bespaart een hoop zoekwerk. Dat dan weer wel. En voor een “Oh ja Erlebnis” klik je op Oud Goud.<p>
+                </div>
+            </div>
+        </div>
     </section>
 
 <?php get_footer(); ?>

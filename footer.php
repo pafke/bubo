@@ -1,4 +1,4 @@
-    <section class="bg-primary" id="contact">        
+    <section class="bg-primary" id="contact">
         <svg version="1.1" class="logo-cut-bottom" x="0px" y="0px" viewBox="0 291.512 612 209.163" enable-background="new 0 0 189.8 64.81" xml:space="preserve">
             <g>
                 <path class="bg-primary" stroke="#FFF" stroke-width="3" d="M505.093,379.02c9.303-0.961,18.893-1.918,27.876-3.469c36.068-6.075,48.108-36.336,51.971-59.266
@@ -42,23 +42,24 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo_vert.svg">
                         </div>
                         <div class="container-content">
-                            <h4>About Bubo Bubo</h3> 
-                            This is Photoshop's version  of Lorem Ipsum. Proin  urna neque. Suspendisse in orci enim.Let's inspire each other with great stories from all over the world!                    
+                            <h4>About Bubo Bubo</h3>
+                            Bubo Bubo is an creative advertising- and design agency with offices in two cities and two countries:<br>
+                            Eindhoven, The Netherlands and Sidney, Australia.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
-    
+
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 
-    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>    
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/svg-injector.min.js"></script>
-    
+
     <?php wp_footer(); ?>
 </body>
 

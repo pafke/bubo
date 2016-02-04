@@ -44,7 +44,11 @@ get_header(); ?>
                     <span class="subtitle">Art director</span>
                     <span class="subtitle">Concept</span>
                     <p>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh 
+                        Volgde aan het St. Lucas in Boxtel de opleiding Grafisch Vormgeven en ging daarna communicatie studeren aan de Fontys Hogeschool Communicatie. <br>
+                        Na zijn afstuderen was hij 4 jaar lang art director bij reclamebureau XXS in Amsterdam.<br>
+                        Bij Bubo Bubo is Thijs primair verantwoordelijk voor Art Direction. <br>
+                        Bovendien heeft hij veel belangstelling voor incubators en start-ups in Eindhoven. <br>
+                        Daarnaast is hij als communicatiedocent verbonden aan de opleiding Mediadesign van Fontys Hogescholen. 
                     </p>
                     <a href="#"><img class="linkedin" src="<?php echo get_template_directory_uri(); ?>/img/linkedin_logo.svg"></a>
                 </div>
@@ -57,7 +61,12 @@ get_header(); ?>
                     <span class="subtitle">Copywriter</span>
                     <span class="subtitle">Concept</span>
                     <p>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh 
+                        Studeerde Nederlandse Taal- en Letterkunde aan de Universiteit van Amsterdam en financierde zijn studie grotendeels met het schrijven van reclameteksten.<br>
+                        Gaf 10 jaar leiding aan credo.creatie.<br> 
+                        Na een freelance periode vestigt hij zich in 2008 samen met Thijs van Gerwen op Strijp-S met het concept Bubo Bubo.<br>
+                        Binnen dit bureau vervult hij de rol van copywriter.<br>
+                        Hij heeft een voorliefde voor korte teksten en mooie typografie.<br>
+                        Daarnaast is Ben als docent mediadesign verbonden aan Fontys Hogeschool ICT en verzorgt hij trainingen voor de SRM.
                     </p>
                     <a href="#"><img class="linkedin" src="<?php echo get_template_directory_uri(); ?>/img/linkedin_logo.svg"></a>
                 </div>                
