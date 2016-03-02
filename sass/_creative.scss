@@ -799,9 +799,11 @@ h4 {
     opacity: 0;
     width: 80px;
     z-index: 999;
+    display: none;
 }
 .carousel li.slick-center .zoom {
     opacity: 1;
+    display: inline-block;
 }
 
 
