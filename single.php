@@ -43,6 +43,7 @@ get_header(); ?>
                     $image = get_field('logo');
                     $size = 'slider_size';
                     $thumb = $image['sizes'][ $size ];
+                    $full = $image['sizes'][ 'large' ];
                     if( !empty($image) ): ?>
 
                     <?php endif; ?>
@@ -56,15 +57,16 @@ get_header(); ?>
                             <?php
                             $attachment_id = $attachments->id();
                             $sliderSizeUrl = wp_get_attachment_image_src( $attachment_id, $size);
+                            $largeSizeUrl = wp_get_attachment_image_src( $attachment_id, 'large');
                             ?>
                               <?php if($counter == 3){ ?>
                               <li class="slider-logo" >
-                                <img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg">
+                                <a href="#" data-featherlight="<?php echo $full; ?>"><img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg"></a>
                                 <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
                               </li>
                               <?php } ?>
                               <li>
-                                <img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg">
+                                <a href="#" data-featherlight="<?php echo $largeSizeUrl[0]; ?>"><img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg"></a>
                                 <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>);"></span>
                               </li>
                             <?php endwhile; ?>

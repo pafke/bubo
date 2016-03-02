@@ -10,8 +10,10 @@
     <title>Bubo bubo</title>
     
     <link href="<?php echo get_template_directory_uri(); ?>/css/slick.css" rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri(); ?>/css/featherlight.min.css" rel="stylesheet" />
     <?php wp_head(); ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/featherlight.min.js"></script>
     
 </head>
 
