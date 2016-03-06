@@ -50,7 +50,7 @@ get_header(); ?>
                         Bovendien heeft hij veel belangstelling voor incubators en start-ups in Eindhoven. <br>
                         Daarnaast is hij als communicatiedocent verbonden aan de opleiding Mediadesign van Fontys Hogescholen. 
                     </p>
-                    <a href="#"><img class="linkedin" src="<?php echo get_template_directory_uri(); ?>/img/linkedin_logo.svg"></a>
+                    <a href="https://www.linkedin.com/in/thijsv2" target="_blank"><img class="linkedin" src="<?php echo get_template_directory_uri(); ?>/img/linkedin_logo.svg"></a>
                 </div>
                 <div class="col-md-4 logo">
                     <div class="portrait"></div>
@@ -68,7 +68,7 @@ get_header(); ?>
                         Hij heeft een voorliefde voor korte teksten en mooie typografie.<br>
                         Daarnaast is Ben als docent mediadesign verbonden aan Fontys Hogeschool ICT en verzorgt hij trainingen voor de SRM.
                     </p>
-                    <a href="#"><img class="linkedin" src="<?php echo get_template_directory_uri(); ?>/img/linkedin_logo.svg"></a>
+                    <a href="https://www.linkedin.com/in/benveld" target="_blank"><img class="linkedin" src="<?php echo get_template_directory_uri(); ?>/img/linkedin_logo.svg"></a>
                 </div>                
             </div>            
         </div>
