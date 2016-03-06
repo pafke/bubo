@@ -36,7 +36,7 @@
                     <a href="mailto:ben@bubobubo.eu"><span>ben</span>@bubobubo.eu</a>
                     <span>+</span>31 6 427 69 997
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12 about-short">
                     <div class="container-about">
                         <div class="container-img">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo_vert.svg">

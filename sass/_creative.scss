@@ -179,8 +179,10 @@ aside {
 .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
-
-@media(min-width:768px) {
+.about-short {
+    margin-top: 40px;
+}
+@media(min-width:768px) {    
     .navbar-right {
         margin-top: 3px;
     }
@@ -337,6 +339,12 @@ header .header-content .header-content-inner p {
 }
 
 @media(min-width:992px) {
+    .about-short {
+        margin: 0;
+    }
+    .about-properties {
+        height: 280px;
+    }
     .service-box {
         margin: 20px auto 0;
     }
@@ -805,7 +813,6 @@ h4 {
     opacity: 1;
     display: inline-block;
 }
-
 
 .portfolio-link {
     display: block;
