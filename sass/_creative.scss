@@ -135,12 +135,12 @@ aside {
 
 .header-logo{
     height: 60px;
-    padding: 10px 0 15px;
+    padding: 10px 0 15px 15px;
 }
 
 .navbar-default {
     border: none;
-    background-color: #fff;
+    background: rgba(0,0,0,.5);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -161,7 +161,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #FFF;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -182,12 +182,18 @@ aside {
 .about-short {
     margin-top: 40px;
 }
-@media(min-width:768px) {    
+.navbar-toggle {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+@media(min-width:768px) {
+    .header-logo{
+        padding: 10px 0 15px;
+    }
     .navbar-right {
         margin-top: 3px;
     }
     .navbar-default {
-        background: rgba(0,0,0,.5);
         vertical-align: bottom;
     }
 
