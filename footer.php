@@ -43,7 +43,8 @@
                         </div>
                         <div class="container-content">
                             <h4>About Bubo Bubo</h3>
-                            Bubo Bubo is an creative advertising- and design agency with offices in two cities and two countries:<br>
+                            Bubo Bubo is an creative advertising- and design agency<br>
+                            with offices in two cities and two countries:<br>
                             Eindhoven, The Netherlands and Sidney, Australia.
                         </div>
                     </div>

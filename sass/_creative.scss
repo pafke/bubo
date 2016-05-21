@@ -28,6 +28,9 @@ a:focus {
     color: #eb3812;
     outline: none;
 }
+:focus {
+    outline: 0;
+}
 
 h1,
 h2,
@@ -127,10 +130,6 @@ aside {
 
 .no-padding {
     padding: 0;
-}
-.grayscale {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
 }
 
 .header-logo{
@@ -262,7 +261,9 @@ aside {
 	width: 100%;
 	height: 100%;
 }
-
+.margin-30-bottom {
+    margin-bottom: 30px;
+}
 header {
     position: relative;
     width: 100%;
@@ -298,6 +299,7 @@ header .header-content .header-content-inner p {
 }
 
 @media(min-width:768px) {
+
     header {
         min-height: 500px;
     }
@@ -345,6 +347,7 @@ header .header-content .header-content-inner p {
 }
 
 @media(min-width:992px) {
+
     .about-short {
         margin: 0;
     }
@@ -586,7 +589,7 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background: url('img/bg_vid2.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }

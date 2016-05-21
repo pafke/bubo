@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Bubo bubo</title>
-    
+
     <link href="<?php echo get_template_directory_uri(); ?>/css/slick.css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri(); ?>/css/featherlight.min.css" rel="stylesheet" />
     <?php wp_head(); ?>
     <script src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/featherlight.min.js"></script>
-    
+
 </head>
 
 <body id="page-top">
@@ -29,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo_bubo.svg">
+                <a href="<?php echo get_site_url(); ?>"><img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo_bubo.svg"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

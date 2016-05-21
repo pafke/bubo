@@ -39,8 +39,8 @@
         </svg>
 
     </header>
-	<video autoplay  poster="<?php echo get_template_directory_uri(); ?>/img/bg_vid2.jpg" id="bgvid" class="grayscale">	  
-	<source src="<?php echo get_template_directory_uri(); ?>/assets/owl.webm" type="video/webm">
+	<video autoplay  poster="<?php echo get_template_directory_uri(); ?>/img/bg_vid2.jpg" id="bgvid">
+	<!--<source src="<?php echo get_template_directory_uri(); ?>/assets/owl.webm" type="video/webm">-->
 	<source src="<?php echo get_template_directory_uri(); ?>/assets/owl.mp4" type="video/mp4">
 	</video>
 
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-heading text-primary ">What we do?</h2>
+                    <h2 class="section-heading text-primary margin-30-bottom">What we do?</h2>
                 </div>
             </div>
         </div>
@@ -95,18 +95,18 @@
             </div>
         </div>
         <div class="container">
-            <div class="row no-gutter">              
+            <div class="row no-gutter">
                 <?php
                     $showTheseCats = get_option('show_these_cats');
                     if($showTheseCats[checkbox]){
                         $args = 'cat='. implode(', ', $showTheseCats[checkbox]).'';
                         query_posts( $args );
 
-                        while ( have_posts() ) : the_post();                            
+                        while ( have_posts() ) : the_post();
                             ?>
                             <a href="<?php the_permalink(); ?>" class="portfolio-link">
                                 <div class="col-lg-3 col-sm-6 portfolio-item">
-                                    <?php 
+                                    <?php
                                     $image = get_field('logo');
                                     $size = 'logo_size';
                                     $thumb = $image['sizes'][ $size ];
@@ -122,6 +122,6 @@
                 ?>
             </div>
         </div>
-    </section>   
+    </section>
 
     <?php get_footer(); ?>

@@ -23,17 +23,6 @@ $( document ).ready(function() {
             }
         });
     }
-    var checkvar = true;
-    $('#bgvid').on('timeupdate', function(event) {
-        var current = Math.round(event.target.currentTime * 1000);
-        var total = Math.round(event.target.duration * 1000);
-        if ( (( total - current ) < 4000) && checkvar == true) {
-            checkvar = false;
-            //$(this).fadeOut(4000);
-            /* var oldClass = $('#cycleThis svg').attr('class');
-            $('#cycleThis svg').attr('class',oldClass+' showBubo'); */
-        }
-    });
 
     $('.work .page-title').fitText(0.9);
     $('.contact .page-title').fitText(0.85);
