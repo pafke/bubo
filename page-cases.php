@@ -44,11 +44,11 @@ get_header(); ?>
                         $args = 'cat='. implode(', ', $showTheseCats[checkbox]).'';
                         query_posts( $args );
 
-                        while ( have_posts() ) : the_post();                            
+                        while ( have_posts() ) : the_post();
                             ?>
                             <a href="<?php the_permalink(); ?>" class="portfolio-link">
                                 <div class="col-lg-3 col-sm-6 portfolio-item">
-                                    <?php 
+                                    <?php
                                     $image = get_field('logo');
                                     $size = 'logo_size';
                                     $thumb = $image['sizes'][ $size ];
@@ -62,7 +62,7 @@ get_header(); ?>
                         wp_reset_query();
                     }
                 ?>
-            </div>            
+            </div>
         </div>
     </section>
 
