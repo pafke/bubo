@@ -24,6 +24,13 @@ $( document ).ready(function() {
         });
     }
 
+    ;( function( $ ) {
+        $( '.swipebox' ).swipebox({
+            hideBarsDelay: false,
+            loopAtEnd: true
+        });
+    } )( jQuery );
+
     $('.work .page-title').fitText(0.9);
     $('.contact .page-title').fitText(0.85);
     $('.cases .page-title').fitText(0.895);

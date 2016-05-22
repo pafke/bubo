@@ -44,6 +44,7 @@ get_header(); ?>
                     $size = 'slider_size';
                     $thumb = $image['sizes'][ $size ];
                     $full = $image['sizes'][ 'large' ];
+                    $logotitle =  get_the_title($image['id']);
                     if( !empty($image) ): ?>
 
                     <?php endif; ?>
@@ -58,33 +59,35 @@ get_header(); ?>
                             $attachment_id = $attachments->id();
                             $sliderSizeUrl = wp_get_attachment_image_src( $attachment_id, $size);
                             $largeSizeUrl = wp_get_attachment_image_src( $attachment_id, 'large');
+                            $imgtitle =  get_the_title($attachment_id);
+
                             ?>
                               <?php if($counter == 3){ ?>
                               <li class="slider-logo" >
-                                <a href="#" data-featherlight="<?php echo $full; ?>"><img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg"></a>
+                                <a class="swipebox" href="<?php echo $full; ?>" title="<?php echo $logotitle; ?>"><img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg"></a>
                                 <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
                               </li>
                               <?php } ?>
                               <li>
-                                <a href="#" data-featherlight="<?php echo $largeSizeUrl[0]; ?>"><img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg"></a>
+                                <a class="swipebox" href="<?php echo $largeSizeUrl[0]; ?>" title="<?php echo $imgtitle; ?>"><img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg"></a>
                                 <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>);"></span>
                               </li>
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </ul>
-                    
+
                     <script type="text/javascript">
                     $(document).ready(function(){
                         $('.carousel').slick({
                             centerMode: true,
                             slidesToShow: 5,
                             initialSlide: 2
-                        });                        
-                        
+                        });
+
                         $('.slick-center').next().addClass('nextslide');
                         $('.slick-center').prev().addClass('nextslide');
                         $('.slick-arrow').html('');
-                        
+
                         $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
                             $('.nextslide').removeClass('nextslide');
                             $('.slick-center').addClass('nextslide');
@@ -101,9 +104,9 @@ get_header(); ?>
                         });
                     });
                     </script>
-                    
-                    
-                    
+
+
+
                 </div>
             </div>
         </div>
