@@ -36,81 +36,16 @@ get_header(); ?>
 
     </section>
     <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 slider">
-                    <?php
-                    $image = get_field('logo');
-                    $size = 'slider_size';
-                    $thumb = $image['sizes'][ $size ];
-                    $full = $image['sizes'][ 'large' ];
-                    $logotitle =  get_the_title($image['id']);
-                    if( !empty($image) ): ?>
-
-                    <?php endif; ?>
-
-                    <ul class="carousel">
-                        <?php $counter = 0; ?>
-                        <?php $attachments = new Attachments( 'my_attachments' ); ?>
-                        <?php if( $attachments->exist() ) : ?>
-
-                            <?php while( $attachments->get() ) :  $counter = $counter+1;?>
-                            <?php
-                            $attachment_id = $attachments->id();
-                            $sliderSizeUrl = wp_get_attachment_image_src( $attachment_id, $size);
-                            $largeSizeUrl = wp_get_attachment_image_src( $attachment_id, 'large');
-                            $imgtitle =  get_the_title($attachment_id);
-
-                            ?>
-                              <?php if($counter == 3){ ?>
-                              <li class="slider-logo" >
-                                <a class="swipebox" href="<?php echo $full; ?>" title="<?php echo $logotitle; ?>"><img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg"></a>
-                                <img src="<?php echo $thumb; ?>" alt="<?php echo $image['alt']; ?>" />
-                              </li>
-                              <?php } ?>
-                              <li>
-                                <a class="swipebox" href="<?php echo $largeSizeUrl[0]; ?>" title="<?php echo $imgtitle; ?>"><img class="zoom" src="<?php echo get_template_directory_uri(); ?>/img/zoom.svg"></a>
-                                <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>);"></span>
-                              </li>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-                    </ul>
-
-                    <script type="text/javascript">
-                    $(document).ready(function(){
-                        $('.carousel').slick({
-                            centerMode: true,
-                            slidesToShow: 5,
-                            initialSlide: 2
-                        });
-
-                        $('.slick-center').next().addClass('nextslide');
-                        $('.slick-center').prev().addClass('nextslide');
-                        $('.slick-arrow').html('');
-
-                        $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-                            $('.nextslide').removeClass('nextslide');
-                            $('.slick-center').addClass('nextslide');
-                            if(currentSlide == 0 && nextSlide != 1){
-                                $('.slick-center').prev().prev().addClass('nextslide');
-                            }
-                            else {
-                                if(nextSlide > currentSlide || nextSlide == 0 && currentSlide != 1){
-                                    $('.slick-center').next().next().addClass('nextslide');
-                                }else {
-                                    $('.slick-center').prev().prev().addClass('nextslide');
-                                }
-                            }
-                        });
-                    });
-                    </script>
-
-
-
-                </div>
-            </div>
+        <div class="text-center portfolio-logo">
+            <?php
+                $image = get_field('logo');
+                $size = 'slider_size';
+                $thumb = $image['sizes'][ $size ];
+                $full = $image['sizes'][ 'large' ];
+                $logotitle =  get_the_title($image['id']);
+            ?>
+            <img src="<?php echo $thumb; ?>"" />
         </div>
-
         <div class="container paragraph-times">
             <div class="row">
                 <div class="col-md-6">
@@ -131,6 +66,42 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row no-gutter single-item-images">
+                        <?php $counter = 0; ?>
+                        <?php $attachments = new Attachments( 'my_attachments' ); ?>
+                        <?php if( $attachments->exist() ) : ?>
+                            <?php while( $attachments->get() ) :  $counter = $counter+1;?>
+                            <?php
+                            $attachment_id = $attachments->id();
+                            $sliderSizeUrl = wp_get_attachment_image_src( $attachment_id, $size);
+                            $largeSizeUrl = wp_get_attachment_image_src( $attachment_id, 'large');
+                            $imgtitle =  get_the_title($attachment_id);
+                            $caption = $attachments->field( 'caption' );
+                            ?>
+
+                                <div class="col-lg-3 col-sm-6">
+                                    <a href="<?php echo $largeSizeUrl[0]; ?>" class="item-images swipebox" title="<?php echo $imgtitle; ?>">
+                                        <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>)" /></span>
+                                    </a>
+                                </div>
+
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+                    <script type="text/javascript">
+                    ;( function( $ ) {
+                        $( '.swipebox' ).swipebox();
+
+                    } )( jQuery );
+                    </script>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 <?php endwhile; endif; ?>
