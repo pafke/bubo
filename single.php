@@ -39,7 +39,7 @@ get_header(); ?>
         <div class="text-center portfolio-logo">
             <?php
                 $image = get_field('logo');
-                $size = 'slider_size';
+                $size = 'medium';
                 $thumb = $image['sizes'][ $size ];
                 $full = $image['sizes'][ 'large' ];
                 $logotitle =  get_the_title($image['id']);
