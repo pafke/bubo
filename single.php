@@ -85,7 +85,31 @@ get_header(); ?>
 
                                 <div class="col-lg-3 col-sm-6">
                                     <a href="<?php echo $largeSizeUrl[0]; ?>" class="item-images swipebox" title="<?php echo $imgtitle; ?>">
-                                        <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>)" /></span>
+                                        <div class="span-container">
+                                            <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>)" /></span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                        <?php $counter = 0; ?>
+                        <?php $attachments = new Attachments( 'my_attachments' ); ?>
+                        <?php if( $attachments->exist() ) : ?>
+                            <?php while( $attachments->get() ) :  $counter = $counter+1;?>
+                            <?php
+                            $attachment_id = $attachments->id();
+                            $sliderSizeUrl = wp_get_attachment_image_src( $attachment_id, $size);
+                            $largeSizeUrl = wp_get_attachment_image_src( $attachment_id, 'large');
+                            $imgtitle =  get_the_title($attachment_id);
+                            $caption = $attachments->field( 'caption' );
+                            ?>
+
+                                <div class="col-lg-3 col-sm-6">
+                                    <a href="<?php echo $largeSizeUrl[0]; ?>" class="item-images swipebox" title="<?php echo $imgtitle; ?>">
+                                        <div class="span-container">
+                                            <span style="background-image: url(<?php echo $sliderSizeUrl[0]; ?>)" /></span>
+                                        </div>
                                     </a>
                                 </div>
 

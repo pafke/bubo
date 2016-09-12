@@ -890,6 +890,9 @@ h4 {
 }
 .portfolio-logo {
     margin-bottom: 30px;
+    img {
+        transform: scale(.7);
+    }
 }
 .single-item-images {
     margin-top: 30px;
@@ -904,15 +907,19 @@ h4 {
         top: 50%;
         transform: translate(-50%,-50%);
     }
-    span {
-        display: block;
+    .span-container {
         left: 0;
         top: 0;
         position: absolute;
         width: 100%;
         height: 100%;
+        padding: 5px;
+    }
+    span {
+        display: block;
         background-size: cover;
         background-position: center;
+        height: 100%;
     }
 }
 
